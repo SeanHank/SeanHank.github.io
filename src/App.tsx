@@ -223,8 +223,6 @@ export default function App() {
                             {lang === "zh" ? "中文" : "EN"}
                         </ToolbarButton>
                         <ToolbarButton
-                            appearance="subtle"
-                            size="small"
                             onClick={() =>
                                 setThemeMode((m) => (m === "system" ? "dark" : m === "dark" ? "light" : "system"))
                             }
