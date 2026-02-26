@@ -442,19 +442,22 @@ export default function App() {
                     </div>
                 </Section>
 
-                <div className={styles.footer}>
+                <div className={styles.footer} style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
                     <Text size={200}>
                         {t.misc.builtWith} ·{" "}
                         <Link
                             href={
                                 profile.links.github ||
-                                "https://github.com/SeanHank"
+                                "https://github.com/SeanHank/SeanHank.github.io"
                             }
                             target="_blank"
                             rel="noreferrer"
                         >
                             Source
                         </Link>
+                    </Text>
+                    <Text size={200}>
+                        © 2026 Sean Hank. All rights reserved.
                     </Text>
                 </div>
             </div>
