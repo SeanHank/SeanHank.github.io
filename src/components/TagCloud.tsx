@@ -4,7 +4,7 @@ const useStyles = makeStyles({
     row: { display: "flex", flexWrap: "wrap", gap: "8px" },
 });
 
-export function TagCloud(props: { items: string[] }) {
+export function TagCloud(props: { items: readonly string[] }) {
     const styles = useStyles();
     return (
         <div className={styles.row}>

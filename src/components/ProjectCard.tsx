@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 export type Project = {
     title: string;
     description: string;
-    stack: string[];
+    stack: readonly string[];
     image?: string;
     repo?: string;
     demo?: string;

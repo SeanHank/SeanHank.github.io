@@ -9,7 +9,7 @@ export type Experience = {
     title: string;
     org: string;
     period: string;
-    bullets: string[];
+    bullets: readonly string[];
 };
 
 export function ExperienceCard({ e }: { e: Experience }) {
