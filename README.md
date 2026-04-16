@@ -25,8 +25,5 @@ A modern, responsive personal portfolio website built with Vue 3, featuring part
 
 ## License
 
-No License. 
-
-## Author
-
-Built with ❤️ using Vue 3
+© 2026 Sean Hank. All rights reserved.  
+No License.

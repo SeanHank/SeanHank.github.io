@@ -235,7 +235,7 @@ export default {
     {
       id: 1,
       institution: 'Beijing University Of Technology',
-      degree: 'Master of Software Engineering',
+      degree: 'Bachelor of Software Engineering',
       period: '2025 - 2029',
       description: 'Specialized in UI/UX Design and Game Dev',
       achievements: [
