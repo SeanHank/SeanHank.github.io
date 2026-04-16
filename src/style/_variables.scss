@@ -1,0 +1,78 @@
+$primary-color: #8B5CF6;
+$secondary-color: #6366F1;
+$accent-color: #A855F7;
+$gradient: linear-gradient(135deg, #6366F1, #8B5CF6, #A855F7);
+$gradient-hover: linear-gradient(135deg, #4F46E5, #7C3AED, #9333EA);
+
+$bg-dark: #0F172A;
+$bg-card: #1E293B;
+$bg-card-hover: #334155;
+$bg-overlay: rgba(15, 23, 42, 0.95);
+
+$text-primary: #F8FAFC;
+$text-secondary: #94A3B8;
+$text-muted: #64748B;
+
+$border-color: #334155;
+$border-light: rgba(139, 92, 246, 0.2);
+
+$success-color: #10B981;
+$warning-color: #F59E0B;
+$error-color: #EF4444;
+$info-color: #3B82F6;
+
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-glow: 0 0 20px rgba(139, 92, 246, 0.3);
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px
+);
+
+$container-max-widths: (
+  'sm': 540px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1140px,
+  'xxl': 1320px
+);
+
+$spacing: (
+  'xs': 0.25rem,
+  'sm': 0.5rem,
+  'md': 1rem,
+  'lg': 1.5rem,
+  'xl': 2rem,
+  '2xl': 3rem,
+  '3xl': 4rem,
+  '4xl': 6rem
+);
+
+$border-radius: (
+  'none': 0,
+  'sm': 0.25rem,
+  'md': 0.5rem,
+  'lg': 1rem,
+  'xl': 1.5rem,
+  'full': 9999px
+);
+
+$transition-base: all 0.3s ease;
+$transition-fast: all 0.15s ease;
+$transition-slow: all 0.5s ease;
+
+$z-index: (
+  'dropdown': 1000,
+  'sticky': 1020,
+  'fixed': 1030,
+  'modal-backdrop': 1040,
+  'modal': 1050,
+  'popover': 1060,
+  'tooltip': 1070
+);
