@@ -261,7 +261,7 @@ export default {
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
 
@@ -296,6 +296,10 @@ export default {
   padding-right: 2px;
   white-space: nowrap;
 
+  @include respond-below('md') {
+    white-space: normal;
+  }
+
   @include respond-to('md') {
     font-size: 1.25rem;
   }
@@ -320,6 +324,11 @@ export default {
 
   @include respond-below('md') {
     justify-content: center;
+
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+    }
   }
 
   .btn {
