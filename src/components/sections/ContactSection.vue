@@ -67,81 +67,13 @@
             </div>
           </div>
         </div>
-
-        <div class="contact-form-wrapper" data-aos="fade-left">
-          <form class="contact-form" @submit.prevent="handleSubmit">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                v-model="formData.name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                v-model="formData.email"
-                placeholder="your.email@example.com"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                v-model="formData.subject"
-                placeholder="Project Inquiry"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                v-model="formData.message"
-                placeholder="Your message..."
-                rows="5"
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-submit" :disabled="isSubmitting">
-              <span v-if="!isSubmitting">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22,2 15,22 11,13 2,9"></polygon>
-                </svg>
-                Send Message
-              </span>
-              <span v-else class="loading">
-                <svg class="spinner" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="60 30"></circle>
-                </svg>
-                Sending...
-              </span>
-            </button>
-
-            <div v-if="submitMessage" class="submit-message" :class="submitStatus">
-              {{ submitMessage }}
-            </div>
-          </form>
-        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import { ref, computed, reactive } from 'vue'
+import { computed } from 'vue'
 import config from '@/data/config'
 
 export default {
@@ -156,45 +88,9 @@ export default {
       twitter: social.value.twitter
     }))
 
-    const formData = reactive({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    })
-
-    const isSubmitting = ref(false)
-    const submitMessage = ref('')
-    const submitStatus = ref('')
-
-    const handleSubmit = async () => {
-      isSubmitting.value = true
-      submitMessage.value = ''
-
-      setTimeout(() => {
-        isSubmitting.value = false
-        submitStatus.value = 'success'
-        submitMessage.value = 'Thank you! Your message has been sent successfully.'
-
-        formData.name = ''
-        formData.email = ''
-        formData.subject = ''
-        formData.message = ''
-
-        setTimeout(() => {
-          submitMessage.value = ''
-        }, 5000)
-      }, 1500)
-    }
-
     return {
       contact,
-      socialLinks,
-      formData,
-      isSubmitting,
-      submitMessage,
-      submitStatus,
-      handleSubmit
+      socialLinks
     }
   }
 }
@@ -209,14 +105,8 @@ export default {
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-
-  @include respond-to('lg') {
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info {
@@ -332,99 +222,5 @@ export default {
   }
 }
 
-.contact-form-wrapper {
-  background: $bg-card;
-  padding: 2.5rem;
-  border-radius: map-get($border-radius, 'lg');
-  border: 1px solid $border-color;
-}
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-
-  label {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: $text-primary;
-  }
-
-  input,
-  textarea {
-    padding: 0.875rem 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid $border-color;
-    border-radius: map-get($border-radius, 'md');
-    color: $text-primary;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    resize: vertical;
-
-    &::placeholder {
-      color: $text-muted;
-    }
-
-    &:focus {
-      outline: none;
-      border-color: $primary-color;
-      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
-    }
-  }
-}
-
-.btn-submit {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-
-  > span:not(.loading) {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .loading {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .spinner {
-    width: 20px;
-    height: 20px;
-    animation: spin 1s linear infinite;
-  }
-}
-
-.submit-message {
-  padding: 1rem;
-  border-radius: map-get($border-radius, 'md');
-  text-align: center;
-  font-weight: 500;
-
-  &.success {
-    background: rgba(16, 185, 129, 0.1);
-    color: $success-color;
-    border: 1px solid rgba(16, 185, 129, 0.2);
-  }
-
-  &.error {
-    background: rgba(239, 68, 68, 0.1);
-    color: $error-color;
-    border: 1px solid rgba(239, 68, 68, 0.2);
-  }
-}
 </style>

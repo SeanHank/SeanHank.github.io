@@ -126,6 +126,10 @@ export default {
 .timeline-content {
   flex: 1;
   max-width: calc(50% - 40px);
+
+  @include respond-below('md') {
+    max-width: none;
+  }
 }
 
 .timeline-header {
