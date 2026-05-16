@@ -258,10 +258,15 @@ export default {
 
 .hero-text {
   flex: 1;
+  min-width: 580px;
+
+  @include respond-below('md') {
+    min-width: auto;
+  }
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
 
@@ -290,14 +295,17 @@ export default {
   color: $text-secondary;
   margin-bottom: 2rem;
   font-style: italic;
-  display: flex;
-  align-items: center;
+  white-space: nowrap;
+  display: inline-flex;
   gap: 0.25rem;
   padding-right: 2px;
-  white-space: nowrap;
+  align-items: center;
 
   @include respond-below('md') {
     white-space: normal;
+    display: flow;
+    font-size: 1.25rem;
+
   }
 
   @include respond-to('md') {
@@ -308,7 +316,12 @@ export default {
   .motto-suffix {
     color: $primary-color;
     font-size: 1.5rem;
+  }
 
+  .motto-prefix {
+    @include respond-below('md') {
+      margin-right: 0.25rem;
+    }
   }
 }
 
@@ -324,11 +337,6 @@ export default {
 
   @include respond-below('md') {
     justify-content: center;
-
-    .btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.875rem;
-    }
   }
 
   .btn {

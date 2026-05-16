@@ -160,6 +160,9 @@ export default {
   @include respond-below('md') {
     &.scrolled {
       padding: 0.5rem 0;
+      background: rgba(30, 41, 59, 0.95);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
     }
   }
 }

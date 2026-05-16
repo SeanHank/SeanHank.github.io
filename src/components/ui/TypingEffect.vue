@@ -71,7 +71,7 @@ export default {
 @import '@/style/mixins';
 
 .typing-effect {
-  display: inline-flex;
+  display: inline;
   align-items: center;
   font-size: inherit;
   font-family: inherit;
