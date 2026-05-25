@@ -1,6 +1,6 @@
 # SeanHank.github.io
 
-A modern, responsive personal portfolio website built with Vue 3, featuring particle effects, typing animations, and a sleek dark theme design.
+My personal portfolio website built with Vue 3. 
 
 ## Features
 
