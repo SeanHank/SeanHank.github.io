@@ -59,7 +59,7 @@ export default {
       title: 'Atom',
       description: 'Not just a game. ',
       category: 'desktop',
-      image: 'https://private-user-images.githubusercontent.com/261349759/597091005-2e072827-1e53-44c0-9ca3-3ea21ef5e13a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk2OTc3MjEsIm5iZiI6MTc3OTY5NzQyMSwicGF0aCI6Ii8yNjEzNDk3NTkvNTk3MDkxMDA1LTJlMDcyODI3LTFlNTMtNDRjMC05Y2EzLTNlYTIxZWY1ZTEzYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyNVQwODIzNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZTAwMTNjOWE5MDk0NWMzYjA3ZDMzNmM5ZTdjZjIzOTk1ZWFiOTJkODVjY2VhZWI0NzMyMDU4MzQxMWU3MzAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.h5Th0WfvloBaOldFgPcoZBrTGWtSZCZ5MobLWQmccCc',
+      image: 'https://github.com/user-attachments/assets/2e072827-1e53-44c0-9ca3-3ea21ef5e13a',
       technologies: ['Java', 'Gradle', 'LibGDX', 'lwjgl 3'],
       features: [
         'User authentication and authorization',
