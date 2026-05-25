@@ -96,7 +96,7 @@ export default {
       title: 'Cliff Messenger',
       description: 'Cross-platform, end-to-end encrypted, and privacy-focused instant messaging application',
       category: 'mobile',
-      image: 'https://private-user-images.githubusercontent.com/261349759/597091382-0002ea4e-1d02-4f58-a9c8-ebe96725f176.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk3MDA3MzAsIm5iZiI6MTc3OTcwMDQzMCwicGF0aCI6Ii8yNjEzNDk3NTkvNTk3MDkxMzgyLTAwMDJlYTRlLTFkMDItNGY1OC1hOWM4LWViZTk2NzI1ZjE3Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyNVQwOTEzNTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMzJhYTViYTlkOTUwYzBkZjdmYTVkNTZjYTA1YTk0YTg4YmU4OTZhMWFkMWYyZmIxNDQ1ZTUzMDVmODlhYjk3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.WQOzKSBydWNCnOummEh8HfJF5kk84PKnF4rn8x7wTaY0',
+      image: 'https://github.com/user-attachments/assets/0002ea4e-1d02-4f58-a9c8-ebe96725f176',
       technologies: ['Dart', 'Material UI', 'NoSQL', 'SQLite'],
       features: [
         'All messages are encrypted using AES with group-specific keys',
