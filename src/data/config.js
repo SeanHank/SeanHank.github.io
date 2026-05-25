@@ -77,7 +77,7 @@ export default {
       title: 'World Simulation App',
       description: 'VIRTUALIZED Global Geopolitical and Economic Simulation Platform.',
       category: 'desktop',
-      image: 'https://private-user-images.githubusercontent.com/261349759/597091136-ee8ec72c-b947-467a-951d-de704132f69d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk2OTkzMjgsIm5iZiI6MTc3OTY5OTAyOCwicGF0aCI6Ii8yNjEzNDk3NTkvNTk3MDkxMTM2LWVlOGVjNzJjLWI5NDctNDY3YS05NTFkLWRlNzA0MTMyZjY5ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyNVQwODUwMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NDBkNGQ5NDUyMWVmMWZiMjE2NWE5ZDk5YjE4YTFkNTNmMGRmYTU5OTI2NzBhNzM3MjdkYTM5NTA3MDM2MmVmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bSQUBHycMoC-NqOqyeseMs4k2eSVZFuvlLI7z4KIe7Y',
+      image: 'https://github.com/user-attachments/assets/ee8ec72c-b947-467a-951d-de704132f69d',
       technologies: ['C#'],
       features: [
         'Real-time simulation',
