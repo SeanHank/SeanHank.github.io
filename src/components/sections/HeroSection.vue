@@ -175,6 +175,8 @@ export default {
     flex-direction: row;
     text-align: left;
     gap: 3rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -191,6 +193,7 @@ export default {
   position: relative;
   width: 180px;
   height: 180px;
+  max-width: 100%;
 
   @include respond-to('md') {
     width: 200px;
@@ -211,27 +214,26 @@ export default {
   bottom: 0;
   border-radius: map-get($border-radius, 'full');
   background: $gradient;
-  padding: 4px;
   animation: borderGlow 3s ease-in-out infinite;
 
-  &::before {
+  &::after {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 4px;
-    right: 4px;
-    bottom: 4px;
-    background: $bg-dark;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 1px solid rgba(139, 92, 246, 0.25);
     border-radius: map-get($border-radius, 'full');
   }
 }
 
 .avatar-inner {
   position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
   border-radius: map-get($border-radius, 'full');
   background: $gradient;
   display: flex;
@@ -248,21 +250,22 @@ export default {
 
 .avatar-wrapper img {
   position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  width: 100%;
+  height: 100%;
+  max-width: calc(100% - 8px);
+  max-height: calc(100% - 8px);
+  display: block;
   border-radius: map-get($border-radius, 'full');
   object-fit: cover;
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 580px;
-
-  @include respond-below('md') {
-    min-width: auto;
-  }
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .hero-title {

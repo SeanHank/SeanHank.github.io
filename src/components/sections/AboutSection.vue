@@ -10,18 +10,13 @@
         <div class="about-image" data-aos="fade-right">
           <div class="image-wrapper">
             <div class="image-decoration"></div>
+            <div class="image-ring"></div>
             <div class="image-main" v-if="!personal.avatar">
               <div class="placeholder-avatar">
                 {{ personal.name.charAt(0) }}
               </div>
             </div>
             <img v-else :src="personal.avatar" :alt="personal.name" />
-            <div class="image-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
-              </svg>
-              Available for work
-            </div>
           </div>
         </div>
 
@@ -88,7 +83,7 @@
               Download Resume
             </a>
             <a
-              href="#contact"
+              href="#"
               class="btn btn-outline"
               @click.prevent="scrollToSection('contact')"
             >
@@ -158,10 +153,7 @@ export default {
   position: relative;
   width: 100%;
   max-width: 400px;
-
-  @include respond-to('lg') {
-    max-width: none;
-  }
+  aspect-ratio: 1;
 }
 
 .image-decoration {
@@ -175,20 +167,40 @@ export default {
   opacity: 0.3;
 }
 
-.image-main {
+.image-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: map-get($border-radius, 'lg');
+  background: $gradient;
+  padding: 4px;
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+.image-wrapper > img {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1;
+  display: block;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  margin: 4px;
+  object-fit: cover;
+  border-radius: map-get($border-radius, 'lg');
+}
+
+.image-main {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
   border-radius: map-get($border-radius, 'lg');
   background: $gradient;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
-  @include respond-to('lg') {
-    max-width: 400px;
-  }
 }
 
 .placeholder-avatar {
@@ -198,39 +210,6 @@ export default {
 
   @include respond-to('md') {
     font-size: 10rem;
-  }
-}
-
-.image-main img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: map-get($border-radius, 'lg');
-}
-
-.image-badge {
-  position: absolute;
-  bottom: -2px;
-  right: -20px;
-  background: $bg-card;
-  padding: 1rem 1.5rem;
-  border-radius: map-get($border-radius, 'lg');
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  box-shadow: $shadow-lg;
-  border: 1px solid $border-color;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: $success-color;
-
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  @include respond-to('lg') {
-    right: -30px;
   }
 }
 

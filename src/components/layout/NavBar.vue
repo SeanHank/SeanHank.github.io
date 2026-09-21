@@ -187,6 +187,7 @@ export default {
 .brand-avatar {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
   border-radius: map-get($border-radius, 'full');
   background: $gradient;
   display: flex;
@@ -195,13 +196,18 @@ export default {
   font-weight: 700;
   font-size: 1.25rem;
   color: white;
+  border: 2px solid rgba(139, 92, 246, 0.45);
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
 }
 
 .brand-image {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
   border-radius: map-get($border-radius, 'full');
   object-fit: cover;
+  border: 2px solid rgba(139, 92, 246, 0.45);
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
 }
 
 .brand-name {

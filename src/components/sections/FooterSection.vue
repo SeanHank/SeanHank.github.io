@@ -3,9 +3,10 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <div class="brand-avatar">
+          <div class="brand-avatar" v-if="!personal.avatar">
             {{ personal.name.charAt(0) }}
           </div>
+          <img v-else :src="personal.avatar" :alt="personal.name" class="brand-avatar" />
           <div class="brand-info">
             <h3>{{ personal.name }}</h3>
             <p>{{ personal.title }}</p>
@@ -109,6 +110,7 @@ export default {
 .brand-avatar {
   width: 50px;
   height: 50px;
+  flex-shrink: 0;
   border-radius: map-get($border-radius, 'full');
   background: $gradient;
   display: flex;
@@ -117,6 +119,9 @@ export default {
   font-weight: 700;
   font-size: 1.5rem;
   color: white;
+  border: 2px solid rgba(139, 92, 246, 0.45);
+  box-shadow: 0 0 14px rgba(139, 92, 246, 0.4);
+  object-fit: cover;
 }
 
 .brand-info {
