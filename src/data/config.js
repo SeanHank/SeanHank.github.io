@@ -1,10 +1,10 @@
 export default {
   personal: {
     name: 'Sean Hank',
-    title: 'Full Stack Developer',
+    title: 'System Generalist',
     motto: 'When straightening up, I saw the blue sea and sails. ',
-    avatar: null,
-    bio: 'A passionate developer with 7+ years of experience in building applications and services. Specialized in Python, C#, Java, and Vue.js with a strong focus on creating elegant, user-friendly solutions.',
+    avatar: 'https://avatars.githubusercontent.com/u/261349759?v=4',
+    bio: 'A system generalist working across programming languages, AI, simulation, and game development. Currently focused on DrugOS, a multiscale human drug-response simulator.',
     location: 'Auckland, New Zealand',
     email: 'xiaohanaus@gmail.com',
     website: 'https://seanhank.github.io',
@@ -23,32 +23,48 @@ export default {
       category: 'Frontend',
       icon: 'code',
       items: [
-        { name: 'Vue.js', level: 95, icon: 'vue' },
-        { name: 'TypeScript', level: 90, icon: 'typescript' },
+        { name: 'Vue.js', level: 92, icon: 'vue' },
+        { name: 'TypeScript', level: 88, icon: 'typescript' },
         { name: 'JavaScript', level: 85, icon: 'javascript' },
-        { name: 'HTML/CSS', level: 70, icon: 'html' },
-        { name: 'Sass/SCSS', level: 60, icon: 'sass' }
+        { name: 'Dart', level: 78, icon: 'dart' },
+        { name: 'Flutter', level: 80, icon: 'flutter' },
+        { name: 'Sass/SCSS', level: 75, icon: 'sass' }
       ]
     },
     {
       category: 'Backend',
       icon: 'server',
       items: [
-        { name: 'Python', level: 99, icon: 'python' },
-        { name: 'Java', level: 90, icon: 'api' },
-        { name: 'C#', level: 90, icon: 'nodejs' },
-        { name: 'SQLite', level: 88, icon: 'mongodb' },
-        { name: 'MySQL', level: 88, icon: 'graphql' },
-        { name: 'NoSQL', level: 80, icon: 'database' },
+        { name: 'Python', level: 95, icon: 'python' },
+        { name: 'C# / .NET', level: 90, icon: 'dotnet' },
+        { name: 'Java', level: 85, icon: 'java' },
+        { name: 'Django', level: 85, icon: 'django' },
+        { name: 'FastAPI', level: 82, icon: 'fastapi' },
+        { name: 'Node.js', level: 80, icon: 'nodejs' }
+      ]
+    },
+    {
+      category: 'AI & Data',
+      icon: 'code',
+      items: [
+        { name: 'PyTorch', level: 90, icon: 'pytorch' },
+        { name: 'TensorFlow', level: 85, icon: 'tensorflow' },
+        { name: 'NumPy', level: 88, icon: 'numpy' },
+        { name: 'Pandas', level: 85, icon: 'pandas' },
+        { name: 'OpenCV', level: 80, icon: 'opencv' },
+        { name: 'Scikit-learn', level: 82, icon: 'scikit' }
       ]
     },
     {
       category: 'DevOps & Tools',
       icon: 'tool',
       items: [
-        { name: 'Docker', level: 90, icon: 'docker' },
-        { name: 'Github Actions', level: 85, icon: 'git' },
-        { name: 'Git', level: 80, icon: 'aws' }
+        { name: 'Git', level: 92, icon: 'git' },
+        { name: 'Docker', level: 88, icon: 'docker' },
+        { name: 'Linux', level: 90, icon: 'linux' },
+        { name: 'Bash', level: 85, icon: 'bash' },
+        { name: 'SQLite', level: 85, icon: 'sqlite' },
+        { name: 'Azure', level: 78, icon: 'azure' }
       ]
     }
   ],
@@ -56,113 +72,126 @@ export default {
   projects: [
     {
       id: 1,
-      title: 'Atom',
-      description: 'Not just a game. ',
-      category: 'desktop',
-      image: 'https://private-user-images.githubusercontent.com/261349759/597091005-2e072827-1e53-44c0-9ca3-3ea21ef5e13a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk2OTc3MjEsIm5iZiI6MTc3OTY5NzQyMSwicGF0aCI6Ii8yNjEzNDk3NTkvNTk3MDkxMDA1LTJlMDcyODI3LTFlNTMtNDRjMC05Y2EzLTNlYTIxZWY1ZTEzYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyNVQwODIzNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZTAwMTNjOWE5MDk0NWMzYjA3ZDMzNmM5ZTdjZjIzOTk1ZWFiOTJkODVjY2VhZWI0NzMyMDU4MzQxMWU3MzAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.h5Th0WfvloBaOldFgPcoZBrTGWtSZCZ5MobLWQmccCc',
-      technologies: ['Java', 'Gradle', 'LibGDX', 'lwjgl 3'],
+      title: 'HelixLang',
+      description: 'DNA is source code.',
+      category: 'other',
+      image: '',
+      technologies: ['Python', 'Compiler', 'Bioinformatics'],
       features: [
-        'User authentication and authorization',
-        'Product catalog with search and filtering',
-        'Shopping cart with real-time updates',
-        'Secure payment processing with Stripe',
-        'Admin dashboard for inventory management',
-        'Order tracking and history'
+        'Bioinformatics-inspired programming language',
+        'Treats DNA as the source of code',
+        'Compiler toolchain written in Python',
+        'Designed for biology and bioinformatics workflows'
+      ],
+      github: 'https://github.com/SeanHank/HelixLang',
+      demo: null
+    },
+    {
+      id: 2,
+      title: 'DrugOS',
+      description: 'Multiscale human drug-response simulator.',
+      category: 'other',
+      image: '',
+      technologies: ['Python', 'Simulation', 'ML/AI'],
+      features: [
+        'Multiscale simulation of human drug response',
+        'Python-based scientific computing stack',
+        'Models the interaction between drugs and human biology'
+      ],
+      github: 'https://github.com/SeanHank/DrugOS',
+      demo: null
+    },
+    {
+      id: 3,
+      title: 'HummingFlight',
+      description: 'Run the full, unquantized GLM-5.2 BF16 on a single laptop.',
+      category: 'other',
+      image: '',
+      technologies: ['C++', 'GLM', 'LLM'],
+      features: [
+        'High-performance C++ inference engine',
+        'Runs full, unquantized GLM-5.2 at BF16 precision',
+        'Engineered to fit and run on a single laptop'
+      ],
+      github: 'https://github.com/SeanHank/HummingFlight',
+      demo: null
+    },
+    {
+      id: 4,
+      title: 'AtomZero',
+      description: 'Zero is the cradle of all possibilities.',
+      category: 'other',
+      image: '',
+      technologies: ['GDScript', 'Godot', 'Game Framework'],
+      features: [
+        'Game framework built in GDScript for Godot',
+        'Mod and module support',
+        'Designed as a foundation for voxel-style games'
+      ],
+      github: 'https://github.com/SeanHank/AtomZero',
+      demo: null
+    },
+    {
+      id: 5,
+      title: 'Atom',
+      description: 'Not just a game.',
+      category: 'desktop',
+      image: '',
+      technologies: ['Java', 'Gradle', 'LibGDX', 'LWJGL 3'],
+      features: [
+        'Voxel-based game built with LibGDX and LWJGL 3',
+        'Customizable gameplay systems',
+        'Java and Gradle build pipeline'
       ],
       github: 'https://github.com/SeanHank/Atom',
       demo: null
     },
     {
-      id: 2,
-      title: 'World Simulation App',
-      description: 'VIRTUALIZED Global Geopolitical and Economic Simulation Platform.',
-      category: 'desktop',
-      image: 'https://private-user-images.githubusercontent.com/261349759/597091136-ee8ec72c-b947-467a-951d-de704132f69d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk2OTkzMjgsIm5iZiI6MTc3OTY5OTAyOCwicGF0aCI6Ii8yNjEzNDk3NTkvNTk3MDkxMTM2LWVlOGVjNzJjLWI5NDctNDY3YS05NTFkLWRlNzA0MTMyZjY5ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyNVQwODUwMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NDBkNGQ5NDUyMWVmMWZiMjE2NWE5ZDk5YjE4YTFkNTNmMGRmYTU5OTI2NzBhNzM3MjdkYTM5NTA3MDM2MmVmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bSQUBHycMoC-NqOqyeseMs4k2eSVZFuvlLI7z4KIe7Y',
-      technologies: ['C#'],
+      id: 6,
+      title: 'PFLE',
+      description: 'A language engine that learns English WITHOUT learning parameters.',
+      category: 'other',
+      image: '',
+      technologies: ['Python', 'NLP', 'Language'],
       features: [
-        'Real-time simulation',
-        'Sophisticated macroeconomic economic modeling',
-        'Predict complex political dynamics',
-        'Geographic-circumstance-based Military System',
-        'Bilateral relationships maintained via Diplomatic System',
-        'Terrain-affected War System',
-        'AI Behavior System make auto decisions',
+        'Language engine with zero learned parameters',
+        'Learns English through structural rules',
+        'Python-based research project'
       ],
-      github: 'https://github.com/SeanHank/WorldSimApp',
+      github: 'https://github.com/SeanHank/PFLE',
       demo: null
     },
     {
-      id: 3,
-      title: 'Cliff Messenger',
-      description: 'Cross-platform, end-to-end encrypted, and privacy-focused instant messaging application',
+      id: 7,
+      title: 'CliffMessenger',
+      description: 'An E2EE secure messenger.',
       category: 'mobile',
-      image: 'https://private-user-images.githubusercontent.com/261349759/597091382-0002ea4e-1d02-4f58-a9c8-ebe96725f176.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk3MDA3MzAsIm5iZiI6MTc3OTcwMDQzMCwicGF0aCI6Ii8yNjEzNDk3NTkvNTk3MDkxMzgyLTAwMDJlYTRlLTFkMDItNGY1OC1hOWM4LWViZTk2NzI1ZjE3Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyNVQwOTEzNTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMzJhYTViYTlkOTUwYzBkZjdmYTVkNTZjYTA1YTk0YTg4YmU4OTZhMWFkMWYyZmIxNDQ1ZTUzMDVmODlhYjk3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.WQOzKSBydWNCnOummEh8HfJF5kk84PKnF4rn8x7wTaY0',
-      technologies: ['Dart', 'Material UI', 'NoSQL', 'SQLite'],
+      image: '',
+      technologies: ['Dart', 'Material UI', 'SQLite', 'WebSocket'],
       features: [
-        'All messages are encrypted using AES with group-specific keys',
-        'Run your own messaging server with zero configuration',
-        'Server never sees plaintext',
-        'Send and receive encrypted text messages in group chats',
-        'Share images with automatic encryption and compression',
-        'Messages queued and delivered upon reconnection'
+        'End-to-end encrypted messaging',
+        'Cross-platform Dart client with Material UI',
+        'Self-hosted server with WebSocket transport',
+        'SQLite-backed local storage'
       ],
       github: 'https://github.com/SeanHank/CliffMessenger',
       demo: null
     },
-    // {
-    //   id: 4,
-    //   title: 'Desktop Markdown Editor',
-    //   description: 'A minimalist yet powerful Markdown editor for developers with live preview, syntax highlighting, and export to multiple formats.',
-    //   category: 'desktop',
-    //   image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600',
-    //   technologies: ['Tauri', 'Vue.js', 'Rust', 'SQLite'],
-    //   features: [
-    //     'Real-time live preview',
-    //     'Syntax highlighting for 100+ languages',
-    //     'Export to PDF, HTML, and DOCX',
-    //     'Customizable themes',
-    //     'Git integration',
-    //     'Local file storage'
-    //   ],
-    //   github: 'https://github.com/SeanHank/markdown-editor',
-    //   demo: 'https://demo-markdown.example.com'
-    // },
-    // {
-    //   id: 5,
-    //   title: 'System Monitor Dashboard',
-    //   description: 'A lightweight desktop application for monitoring system resources with real-time charts, customizable alerts, and process management.',
-    //   category: 'desktop',
-    //   image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600',
-    //   technologies: ['Electron', 'React', 'Node.js', 'Chart.js'],
-    //   features: [
-    //     'Real-time CPU and memory monitoring',
-    //     'Disk usage visualization',
-    //     'Network traffic tracking',
-    //     'Process management and termination',
-    //     'Customizable alert thresholds',
-    //     'System tray integration'
-    //   ],
-    //   github: 'https://github.com/SeanHank/system-monitor',
-    //   demo: null
-    // },
-    // {
-    //   id: 6,
-    //   title: 'DevOps Automation Tool',
-    //   description: 'CLI tool for automating common DevOps tasks including deployment, monitoring, and infrastructure management.',
-    //   category: 'other',
-    //   image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600',
-    //   technologies: ['Python', 'Docker', 'Kubernetes', 'AWS'],
-    //   features: [
-    //     'Automated deployment pipelines',
-    //     'Infrastructure as Code',
-    //     'Container orchestration',
-    //     'Monitoring and alerting',
-    //     'Log aggregation',
-    //     'Backup automation'
-    //   ],
-    //   github: 'https://github.com/SeanHank/devops-tool',
-    //   demo: null
-    // }
+    {
+      id: 8,
+      title: 'WorldSimApp',
+      description: 'VIRTUAL World Simulator.',
+      category: 'desktop',
+      image: '',
+      technologies: ['C#', 'Avalonia', 'Simulation'],
+      features: [
+        'Desktop virtual world simulator',
+        'Built with C# and Avalonia UI',
+        'Simulation and modeling tool'
+      ],
+      github: 'https://github.com/SeanHank/WorldSimApp',
+      demo: null
+    }
   ],
 
   experience: [
