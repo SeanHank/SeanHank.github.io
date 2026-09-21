@@ -73,121 +73,147 @@ export default {
     {
       id: 1,
       title: 'HelixLang',
-      description: 'DNA is source code.',
+      description: 'DNA is source code. Codons are mnemonics. The ribosome is a VM.',
       category: 'other',
       image: '',
-      technologies: ['Python', 'Compiler', 'Bioinformatics'],
+      technologies: ['Python', 'Compiler', 'Bytecode VM', 'Bioinformatics'],
       features: [
-        'Bioinformatics-inspired programming language',
-        'Treats DNA as the source of code',
-        'Compiler toolchain written in Python',
-        'Designed for biology and bioinformatics workflows'
+        'A DSL where genetic material is the source and a bytecode VM is the runtime',
+        'Full compiler pipeline (Lexer → Parser → AST → Compiler → Bytecode → VM)',
+        '22 quantitative simulation backends: FBA metabolism, whole-cell physiology, ecology, human pharmacology',
+        'Validated against COBRApy with error < 10⁻¹³, incl. a 2,712-reaction E. coli model',
+        '7,594 test cases at 100% coverage; 85/85 benchmarks with SHA256-verified goldens'
       ],
       github: 'https://github.com/SeanHank/HelixLang',
       demo: null
     },
     {
       id: 2,
+      title: 'HelixLang-LSP-Plugin',
+      description: 'Language Server Protocol integration for the HelixLang.',
+      category: 'other',
+      image: '',
+      technologies: ['Python', 'Kotlin', 'LSP', 'PyCharm'],
+      features: [
+        'PyCharm plugin + Python language server for the HelixLang DSL',
+        'Live diagnostics, hover docs, completion, navigation and semantic highlighting',
+        'Bytecode disassembler tool window and a DAP line debugger for the VM',
+        'Server gated by ruff + mypy + pytest at 100% coverage; published on JetBrains Marketplace'
+      ],
+      github: 'https://github.com/SeanHank/HelixLang-LSP-Plugin',
+      demo: null
+    },
+    {
+      id: 3,
       title: 'DrugOS',
       description: 'Multiscale human drug-response simulator.',
       category: 'other',
       image: '',
-      technologies: ['Python', 'Simulation', 'ML/AI'],
+      technologies: ['Python', 'Simulation', 'PBPK', 'RDKit'],
       features: [
-        'Multiscale simulation of human drug response',
-        'Python-based scientific computing stack',
-        'Models the interaction between drugs and human biology'
+        'From SMILES + dose + route + human profile to a graded, evidence-attributed toxicity verdict',
+        'Whole-body PBPK across 83 compartments plus target occupancy, QSP signaling and organ-level DILI/QT/AKI/CNS models',
+        'Anchored to production-validated open-source models: ADMET-AI, O\'Hara-Rudy 2011, CKD-EPI 2021, bile-acid PBK',
+        'Decision layer with 90% uncertainty bands, virtual cohorts and Sobol sensitivity analysis',
+        '53/53 validation cases green and 100% branch coverage enforced via CI'
       ],
       github: 'https://github.com/SeanHank/DrugOS',
       demo: null
     },
     {
-      id: 3,
+      id: 4,
       title: 'HummingFlight',
       description: 'Run the full, unquantized GLM-5.2 BF16 on a single laptop.',
       category: 'other',
       image: '',
-      technologies: ['C++', 'GLM', 'LLM'],
+      technologies: ['C++', 'LLM', 'MoE', 'CUDA'],
       features: [
-        'High-performance C++ inference engine',
-        'Runs full, unquantized GLM-5.2 at BF16 precision',
-        'Engineered to fit and run on a single laptop'
+        'From-scratch C++ inference engine running unquantized GLM-5.2 at BF16 (bit-exact)',
+        'Three-tier memory hierarchy (VRAM / RAM / HDD) that streams weights on demand',
+        'MoE-aware loading: fetches only the 8 router-selected experts of 256 (32x less I/O)',
+        'Layer-ahead prefetch with Windows IOCP async I/O and AVX2+FMA BF16 GEMV kernels',
+        'DeepSeek-V3 style MLA attention with compressed KV cache and decoupled RoPE'
       ],
       github: 'https://github.com/SeanHank/HummingFlight',
       demo: null
     },
     {
-      id: 4,
+      id: 5,
       title: 'AtomZero',
       description: 'Zero is the cradle of all possibilities.',
       category: 'other',
       image: '',
-      technologies: ['GDScript', 'Godot', 'Game Framework'],
+      technologies: ['GDScript', 'Godot', 'Mod Framework'],
       features: [
-        'Game framework built in GDScript for Godot',
-        'Mod and module support',
-        'Designed as a foundation for voxel-style games'
+        'Godot 4.6 game framework with zero gameplay — everything is delivered through mods',
+        'Global and world-scoped mods with dependency injection via an 8-sub-API ModAPI facade',
+        'Event-driven EventBus, mod:// virtual filesystem, SHA256 TOFU verification and SemVer resolution',
+        'Cross-platform (macOS / Windows / Linux / Android / iOS) with dev and release packaging modes'
       ],
       github: 'https://github.com/SeanHank/AtomZero',
       demo: null
     },
     {
-      id: 5,
+      id: 6,
       title: 'Atom',
       description: 'Not just a game.',
       category: 'desktop',
       image: '',
-      technologies: ['Java', 'Gradle', 'LibGDX', 'LWJGL 3'],
+      technologies: ['Java', 'LibGDX', 'Gradle', 'LWJGL 3'],
       features: [
-        'Voxel-based game built with LibGDX and LWJGL 3',
-        'Customizable gameplay systems',
-        'Java and Gradle build pipeline'
+        'Sandbox voxel game with procedural seed-based worlds, first-person camera and fly mode',
+        'FBO-first renderer: the whole frame is composed off-screen on a stable GL3 core profile',
+        'Block-based circuit system with four non-interfering signal colors and depth-first propagation',
+        'Day/night cycle, weather, JSON-customizable gameplay data and integrity-checked chunk saves'
       ],
       github: 'https://github.com/SeanHank/Atom',
       demo: null
     },
     {
-      id: 6,
+      id: 7,
       title: 'PFLE',
       description: 'A language engine that learns English WITHOUT learning parameters.',
       category: 'other',
       image: '',
-      technologies: ['Python', 'NLP', 'Language'],
+      technologies: ['Python', 'Symbolic AI', 'NLP', 'Z3'],
       features: [
-        'Language engine with zero learned parameters',
-        'Learns English through structural rules',
-        'Python-based research project'
+        'Symbolic AI engine with zero learned parameters — no gradients, no weight tensors',
+        'CCG + CKY parser, λ-calculus → DRS → FOL semantics, Z3 SMT reasoning with a pure-Python fallback',
+        'Proof-carrying knowledge base: every fact needs a certificate, with KNOWN/INFERRED/HYPOTHETICAL/UNKNOWN states',
+        'Pearl do-calculus causal engine, FOIL rule induction and Popperian falsifiability auto-retraction',
+        'Curiosity-driven learning autonomously fetches facts from Wikidata, DBpedia, WordNet, ConceptNet and Wikipedia'
       ],
       github: 'https://github.com/SeanHank/PFLE',
       demo: null
     },
     {
-      id: 7,
+      id: 8,
       title: 'CliffMessenger',
       description: 'An E2EE secure messenger.',
       category: 'mobile',
       image: '',
-      technologies: ['Dart', 'Material UI', 'SQLite', 'WebSocket'],
+      technologies: ['Flutter', 'Dart', 'WebSocket', 'mDNS', 'SQLCipher'],
       features: [
-        'End-to-end encrypted messaging',
-        'Cross-platform Dart client with Material UI',
-        'Self-hosted server with WebSocket transport',
-        'SQLite-backed local storage'
+        'End-to-end encrypted messenger; one app acts as both a self-hosted server and a client',
+        'AES-256-GCM messages, RSA-2048 OAEP key exchange and per-member wrapped group keys',
+        'LAN discovery over mDNS — no central infrastructure and no internet dependency',
+        'Offline message queue, chunked encrypted file transfer and device-bound SQLCipher storage'
       ],
       github: 'https://github.com/SeanHank/CliffMessenger',
       demo: null
     },
     {
-      id: 8,
+      id: 9,
       title: 'WorldSimApp',
-      description: 'VIRTUAL World Simulator.',
+      description: 'Virtual global geopolitical and economic simulation platform.',
       category: 'desktop',
       image: '',
-      technologies: ['C#', 'Avalonia', 'Simulation'],
+      technologies: ['C#', 'Avalonia', '.NET 8', 'Simulation'],
       features: [
-        'Desktop virtual world simulator',
-        'Built with C# and Avalonia UI',
-        'Simulation and modeling tool'
+        'Desktop geopolitical and economic world simulator built on .NET 8 + Avalonia',
+        'Taylor Rule monetary policy, Phillips curve, trade/sanctions and industry-chain economics',
+        'Political systems with elections and crises, military with war fatigue, alliances and international organizations',
+        'Event-driven narrative, historical memory, path dependence and demographic modeling'
       ],
       github: 'https://github.com/SeanHank/WorldSimApp',
       demo: null
