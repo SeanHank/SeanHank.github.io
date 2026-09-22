@@ -223,18 +223,18 @@ export default {
   experience: [
     {
       id: 1,
-      company: 'TechCorp Inc.',
-      position: 'Senior Full Stack Developer',
-      period: '2022 - Present',
-      description: 'Leading development of enterprise web applications and microservices architecture.',
+      company: 'CREC JOINT VENTURE',
+      position: 'Software Development & Testing',
+      period: '03.08.2026 - 28.08.2026',
+      description: 'Development of enterprise data processing applications and microservices architecture.',
       responsibilities: [
-        'Architect and develop scalable web applications using Vue.js and Node.js',
-        'Lead a team of 5 developers and conduct code reviews',
-        'Implement CI/CD pipelines reducing deployment time by 60%',
-        'Design and optimize database schemas for improved performance',
-        'Collaborate with product team to define feature requirements'
+        'Data Extraction & Preparation',
+        'Settlement & Payment Analysis',
+        'Testing & Validation',
+        'Process Optimization',
+        'Reporting & Documentation'
       ],
-      technologies: ['Vue.js', 'Node.js', 'PostgreSQL', 'Docker', 'AWS']
+      technologies: ['Python', 'Excel', 'MySQL']
     },
     {
       id: 2,
@@ -250,36 +250,6 @@ export default {
         'Mentored junior developers and conducted technical interviews'
       ],
       technologies: ['React', 'Vue.js', 'Python', 'MongoDB', 'Redis']
-    },
-    {
-      id: 3,
-      company: 'WebAgency Co.',
-      position: 'Frontend Developer',
-      period: '2018 - 2020',
-      description: 'Created responsive and interactive user interfaces for client websites.',
-      responsibilities: [
-        'Built pixel-perfect responsive layouts using HTML, CSS, and JavaScript',
-        'Developed reusable UI components and design systems',
-        'Integrated third-party APIs and services',
-        'Collaborated with designers to implement visual designs',
-        'Ensured cross-browser compatibility and accessibility'
-      ],
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Sass', 'jQuery']
-    },
-    {
-      id: 4,
-      company: 'Digital Solutions Ltd.',
-      position: 'Junior Web Developer',
-      period: '2016 - 2018',
-      description: 'Started career building WordPress websites and learning modern web technologies.',
-      responsibilities: [
-        'Developed WordPress themes and plugins',
-        'Maintained and updated existing websites',
-        'Learned modern JavaScript frameworks',
-        'Participated in team meetings and agile ceremonies',
-        'Fixed bugs and improved website performance'
-      ],
-      technologies: ['PHP', 'WordPress', 'HTML', 'CSS', 'JavaScript']
     }
   ],
 
